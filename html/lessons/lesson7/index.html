@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Урок 7</title>
 </head>
 
 <body>
     <form action="">
         <fieldset>
             <legend>Регистрационная форма пользователя</legend>
-            <p>Имя: <input name="login"></p>
+            <p>Имя: <input name="name"></p>
             <p>Укажите возраст:<input type="text" list="age">
                 <datalist id="age">
                     <option value="10-15 лет">
@@ -19,7 +19,7 @@
                     <option value="20-25 лет">
                     <option value="25-30 лет">
                     <option value="старше 42 лет">
-                    </datalist>
+                </datalist>
 
             </p>
             <p>
@@ -37,16 +37,24 @@
             </p>
             <p>
                 <label>Владение языками
-                    <input name="language" type="radio" value="bel"> белорусская
-                    <input name="language" type="radio" value="rus"> русская
-                    <input name="language" type="radio" value="other"> другая
+                    <input name="language" type="checkbox" value="bel"> белорусская
+                    <input name="language" type="checkbox" value="rus"> русская
+                    <input name="language" type="checkbox" value="other"> другая
                 </label>
             </p>
-                <p><input name="login"></p>
-                <p><input type="submit"></p>
+            <p>
+                <label>Фото профиля:
+                    <input type="file" name="file">
+                 </label>
             </p>
-
-
+            <p>Введите логин: <input name="login"></p>
+            <p>Введите пароль: <input name="password"></p>
+            <p>Повторите пароль: <input name="repeat password"></p>
+            <p>                
+                <input type="reset"> 
+                <input type="submit">                
+            </p>
+            
     </form>
 
 </body>

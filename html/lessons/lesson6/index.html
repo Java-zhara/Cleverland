@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 align="center"><strong><big><font color="purple">Cleverland</font></big></strong></h1>
+    <p>
+        <h2 align="center">Формы. Элементы форм</h2>
+    </p>
+    <form action="">
+        <fieldset>
+            <legend>Данные пользователя</legend>
+                <p>Логин: <input name="login"></p>
+                <p>Пароль: <input type="password" name="pass"></p>
+                <p><input type="submit" value="Вход"> </p>
+        </fieldset>        
+
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Пожелания</legend>
+                <p><input type="text" list="city">
+                    <datalist id="city">
+                        <option value="Орша">
+                        <option value="Минск">
+                        <option value="Витебск">                        
+                    </datalist>
+                </p>
+                <p><input type="text" list="what">
+                    <datalist id="what">
+                        <option value="Машина">
+                        <option value="Свой дом">
+                        <option value="Квартира"> 
+                        <option value="Сад">                       
+                    </datalist>
+                </p>
+                 <p>Просите что хотите <input name="name"></p>
+                <label>
+                    <input name="text" type="checkbox" value="text"> Текст
+                </label>
+                <p>
+                    <textarea name="text" cols="30" rows="10">Много текста</textarea> 
+                </p>
+                <p>
+                    <input type="submit"> 
+                </p>          
+                
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
