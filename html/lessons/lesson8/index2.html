@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>   
+    <title>Document</title>    
+    
+</head>
+<body>  
+
+    <h1 align="center">Анкета</h1>
+    <form>
+        <p>Фамилия <input name="surname"></p>
+        <p>Имя <input name="name"></p>
+        <p>Отчество <input name="middle_name"></p>
+        <p>О себе сообщаю</p>
+        <p>
+            <label>Пол
+                <input name="sex" type="radio" value="1"> Мужской
+                <p><input name="sex" type="radio" value="2"> Женский</p>
+            </label>
+        </p>
+        <p>        
+            Дата рождения <input type="date" name="date_of_birth">                    
+        </p>
+        <p>
+            
+            <p>Количество полных лет <input type="number" size="3" name="age" min="18" max="63" value="23">            
+            </form>         
+        </p>
+        <p>Адрес <input name="address"></p>
+        <p>Телефон +375<input type="tel" name="phone_number"></p>
+        <p>Email <input name="email"></p>
+        <p>
+            <label>Образование
+                <input name="education" type="radio" value="1"> Основное
+                <p><input name="education" type="radio" value="2"> Среднее</p>
+                <p><input name="education" type="radio" value="3"> Начальное</p>
+                <p><input name="education" type="radio" value="4"> Начальное</p>
+            </label>
+        </p>
+        <p>Професcия <input type="text" name="profession"></p>
+        <p>Стаж работы:<input type="number" name="experience" list="old">
+            <datalist id="experience">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">               
+            </datalist>
+        </p>
+        <p>Предыдущее место работы <input type="text" name="prior_work"></p>
+        <p>        
+            Период работы на предыдущем месте с <input type="date" name="data1">
+            по <input type="date" name="data2">                     
+        </p>
+        <p>
+            <button type="reset">Очистить форму</button>
+            <button type="button" onclick="checkForm()">Отправить данные</button>
+        </p>
+    </form>
+
+    <script src="form2.js"></script>
+    
+</body>
+</html>
