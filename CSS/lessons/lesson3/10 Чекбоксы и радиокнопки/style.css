@@ -1,4 +1,4 @@
-#radio1:indeterminate + label, #radio2:indeterminate + label {
+input[type^="rad"]:indeterminate + label {
     color: #0000ff;
 }
 

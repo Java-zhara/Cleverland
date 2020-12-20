@@ -14,7 +14,7 @@
             font-size: 16px;
         }
 
-        tr {
+        tr, td {
             border: 1px solid #777;
             padding: 7px;
             background-color: #f0f8ff;
@@ -24,31 +24,35 @@
             width: 450px;
         }
 
-        td [required] {
+        tr:nth-of-type(2) td input, tr:nth-of-type(3) td input,
+        tr:nth-of-type(4) td input, tr:nth-of-type(9) td input {
             border: 1px solid #ff0000;
             box-shadow: 0px 0px 3px #ff0000;
         }
 
-        .colspan {
+        caption {
+            font-size: 20px;
+        }
+
+        caption, td[colspan] {
             text-align: center;
             font-weight: bold;
         }
 
-        .colspan-necessary {
+        tr:last-of-type td {
             color: red;
             font-weight: normal;
-            text-align: center;
         }
 
     </style>
 
 </head>
 <body>
-    <form action="">
-
-        <h1 align="center">Данные о клиенте</h1>
+    <form action="">        
 
         <table border="1">
+
+            <caption>Данные о клиенте</caption>
 
             <td class="colspan" colspan="2">Основные данные</td> 
             
@@ -103,7 +107,7 @@
                 </td>
             </tr>
 
-            <td class="colspan-necessary" colspan="2">Обязательные для заполнения поля выделены красным</td> 
+            <td colspan="2">Обязательные для заполнения поля выделены красным</td> 
 
         </table>
 
