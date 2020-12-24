@@ -2,7 +2,7 @@ div {
     font-size: 20px;
 }
 
-p:nth-of-type(1) {
+p:first-of-type {
     color: black;
     font-weight: bold;
     text-indent: 10px;
