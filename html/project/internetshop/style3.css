@@ -1,0 +1,42 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+li {
+    list-style-type: none; 
+   }
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}
+
+footer {
+    font-size: 12px;
+}
+
+input[type^="text"], [type^="num"]{
+    width: 250px;
+    height: 25px;
+    color: #707070;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 10px rgb(101, 207, 226);
+    text-transform: capitalize;
+}
+
+input[name^="email"] {
+    color: #133d6d;
+    background-color: rgb(219, 213, 213);
+}
+
+
+

@@ -3,49 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GllacyShop</title>
+    <title>AllBooks</title>
+
+    <link href="style3.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="index2.html">Каталог</a></li>
-        <li><a href="index3.html">Контакты</a></li>
-    </ul>
 
-    <hr></hr>
+    <header>
 
-    <h1>Напишите нам</h1>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index2.html">Каталог</a></li>
+            <li><a href="index3.html">Контакты</a></li>
+        </ul>
 
-    <form action="">
-        <p>Имя <input type="text" name="name"></p>
-        <p>Email <input type="text" name="email"></p>
-        <p>
-            <textarea name="text" cols="30" rows="10"></textarea> 
-        </p>
-        <p>Список товаров
-            <input type="text" list="icecream">
-                <datalist id="icecream">
-                    <option value="Сливочное">
-                    <option value="Кофейное">                        
-            </datalist>            
-        </p>
-        <p>
-            <label>Форма оплаты
-                <input name="money" type="radio" value="card"> Карточка
-                <input name="money" type="radio" value="cash"> Наличные                
-            </label>
-        </p>
+        <hr></hr>
 
-        <h2>Адрес</h2>
+        <p>AllBooks</p>
 
-        <p>+37529-555-55-55</p>
+        <p>Книги на все случаи жизни!</p>
 
-        <p>211030, Витебская обл., г. Орша, ул. Мира, 8</p>
+        <hr></hr>
 
-        <p>icecream@mail.ru</p>
+    </header>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2316.2329612756675!2d30.42411951543484!3d54.51175279448009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe22ab1e2b585%3A0xa10e86bd978585f5!2z0YPQu9C40YbQsCDQnNC40YDQsCA4LCDQntGA0YjQsCAyMTEzOTE!5e0!3m2!1sru!2sby!4v1606482423919!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <nav>
 
-    </form>
+        <h1>Напишите нам</h1>
+
+        <form action="">
+
+            <p>Фамилия <input type="text" name="surname"></p>
+
+            <p>Имя <input type="text" name="name"></p>
+
+            <p>Отчество <input type="text" name="middle_name"></p>
+
+            <p>Телефон<input type="number" required name="telephone"></p>
+
+            <p>Email <input type="text" name="email"></p>
+
+            <p>Какие книги хотите заказать<br>
+                <textarea name="text" cols="30" rows="10"></textarea> 
+            </p>
+
+            <p>Форма оплаты
+                <input type="text" list="money">
+                    <datalist id="money">
+                        <option value="Карточка">
+                        <option value="Наличные">                        
+                </datalist>            
+            </p>
+
+            <p>
+                <label>Какое направление в литературе нравиться больше?<br>
+                    <input name="like" type="radio" value="fiction"> Художественная<br>
+                    <input name="like" type="radio" value="unfiction"> Нехудожественная                
+                </label>
+            </p>
+
+            <h3>Адрес</h3>
+
+            <p>+37529-555-55-55</p>
+
+            <p>211030, Витебская обл., г. Орша, ул. Мира, 8</p>
+
+            <p>icecream@mail.ru</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2316.2329612756675!2d30.42411951543484!3d54.51175279448009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe22ab1e2b585%3A0xa10e86bd978585f5!2z0YPQu9C40YbQsCDQnNC40YDQsCA4LCDQntGA0YjQsCAyMTEzOTE!5e0!3m2!1sru!2sby!4v1606482423919!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </form>
+
+        <hr></hr>
+
+    </nav>
+
+    <footer>
+
+        &#169 <br>
+
+        Все права защищены. 
+    
+    </footer>
+
 </body>
+
 </html>

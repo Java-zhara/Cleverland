@@ -1,0 +1,25 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+li {
+    list-style-type: none; 
+   }
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}
+
+footer {
+    font-size: 12px;
+}
