@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    border-collapse: separate;
+    text-align: center;
+}
+
+th, td  {
+    border-radius: 5px;
+    padding: 15px;
+    empty-cells: hide;
+    width: 120px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+th:first-of-type {
+    background: linear-gradient(to top, #87EB06,#6DBB21);
+    background: linear-gradient( 45deg, #87EB06,#6DBB21);
+    color:white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+thead tr:first-of-type {
+    background: linear-gradient(to top, #87EB06,#6DBB21);
+    color:white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+tbody td {
+    background-color: #CDF7AB;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
