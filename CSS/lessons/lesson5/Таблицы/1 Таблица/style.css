@@ -1,0 +1,17 @@
+#table1 {
+    caption-side: top;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#table2 {
+    margin-top: 20px;
+    caption-side: bottom;
+    border-collapse: separate;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    empty-cells: hide;
+}
