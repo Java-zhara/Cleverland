@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список</title>
+
+    <style>
+
+        .block-list {
+            height: 40px;
+            background-color: #F7F7F7;
+            border-top: 5px solid black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            position: relative;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 7px;
+            left: 300px;
+        }
+
+        li {
+            text-transform: uppercase;
+            display: inline;
+            margin-right: 50px; 
+            padding-top: 7px;           
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+
+        li:hover {
+            color: #39AFE3;
+            border-top: 2px solid #39AFE3;
+            transition: all 0.3s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="block-list">
+
+        <ul>
+            <li>Новости</li>
+            <li>Аналитика &#9660;</li>
+            <li>Достижения науки</li>
+            <li>Наука и власть</li>
+            <li>Мнения</li>
+            <li>Теория</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>
