@@ -1,94 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    width: 800px;
-    margin: 0 auto;
+    min-height: 100vh;
+    width: 100wv;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-size: 18px; 
+}
+
+.wrapper, .header, .top-metu, .content, .main-block, .footer-title {
+    display: flex;
+}
+
+.wrapper, .content, .main-block {
+    justify-content: space-between;
+} 
+
+.top-metu, footer, aside {
+    color: white;
+}
+
+.wrapper {
+    flex-direction: column;
+    max-width: 1000px;
+    align-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 
 .header {
-    height: 200px;
-    background-color: #095C5C;
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
+    background-color: #095C5C;
+    flex 0 0 200px;
+    flex-wrap: wrap;
 }
 
 #logo {
-    height: 170px;
-    width: 200px;
+    flex: 0 0 200px;
+    height: 130px;
+    margin: 10px;
     background-color: #FFA500;
-    margin-right: 15px;
-    display: flex;
-    justify-content: center;
 }
 
 .top-metu {
-    height: 60px;
-    background-color: #010D3F;
-    display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    height: 40px;
+    background-color: #010D3F;
+    width: 100%;
 }
 
-.main {
-    height: 250px;
-    position: relative;
+.content {
+    margin: 10px 0;
+    flex: 1 1 60px;
 }
 
-p {
-    position: absolute;
-    left: 380px;
-    top: 70px;
+.main-block {
+    flex: 2 2 60px;
 }
 
-.article-first {
-    padding-top: 10px;
-    height: 70px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.article-first-block {
+article {
     background-color: #00FFFF;
-    width: 385px;
-    display: flex;
-    justify-content: center;
 }
 
-.left-panel:hover, .right-panel:hover {
-    opacity: 1;
-    transform: scale(1.1);
+.first, .second {
+    flex: 1 1 200px;
+    margin: 0 10px;
 }
 
-.aside {
-    padding: 10px 10px 0 10px;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.aside-panel {
+aside {
+    flex: 0 0 200px;
     background-color: #8A2BE2;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-.second {
-    width: 253px;
-}
+    margin: 0 10px;
+} 
 
 footer {
-    height: 120px;
+    flex: 0 0 150px;
     background-color: #023447;
-    display: flex;
     justify-content: center;
-    color: white;
 }
-
-.footer-title {
-    padding-top: 15px;
-}
-
+ 
