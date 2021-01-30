@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;      
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+  /*Header start*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    z-index: 999;
+}
+
+.header-wrapper-reg {
+    background: #000000;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 405px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+}
+
+.header-contacs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tel-ico {
+    padding-right: 15px;
+}
+
+.reg-ico {
+    padding-right: 15px;
+}
+
+.registration {
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    text-decoration: none;
+}
+
+.registration:hover {
+    opacity: .7;
+}
+
+.header-wrapper-nav {
+    background: #0F0F0F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 405px;
+}
+
+.header-logo {
+    padding: 15px 0;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.header-item {
+    padding-right: 40px;
+}
+
+.header-item:last-child {
+    padding-right: 60px;
+}
+
+.header-basket {
+    padding-right: 40px;
+}
+
+.header-link {
+    color: #969696;
+    text-decoration: none;
+}
+
+
+.header-link:hover {
+    color: #FFFFFF;
+    background-color: #1F1F1F;
+    padding: 31px 20px 35px 20px;
+    margin: -31px -20px -35px -20px;
+}
+
+  /*Header end*/
