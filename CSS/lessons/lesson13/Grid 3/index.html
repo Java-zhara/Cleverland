@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid3</title>
+    <style>
+
+        body {
+            min-height: 100vh;
+            width: 100wv;
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            gap: 5px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            background-color: #095C5C;
+            grid-column: 1/7;
+            grid-row: 1/4; 
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+            background-color: #010D3F;
+            grid-column: 1/7;
+            grid-row: 4/5; 
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .article {
+            background-color: #00FFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .article-first {
+            grid-column: 1/4;
+            grid-row: 5/7; 
+        }
+
+        .article-second {
+            grid-column: 4/7;
+            grid-row: 5/7; 
+        }
+
+        .aside {
+            background-color: #8A2BE2;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .aside-first {
+            grid-column: 1/3;
+            grid-row: 7/9;
+        }
+
+        .main {
+            grid-column: 3/5;
+            grid-row: 7/9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .aside-second {
+            grid-column: 5/7;
+            grid-row: 7/9;
+        }
+
+        .article-third, .article-forth, .article-fifth {
+            grid-row: 9/11;
+        }
+        
+        .article-third{
+            grid-column: 1/3;
+        }
+
+        .article-forth{
+            grid-column: 3/5;
+        }
+
+        .article-fifth{
+            grid-column: 5/7;
+        }
+
+        .footer {
+            background-color: #023447;
+            grid-column: 1/7;
+            grid-row: 11/13;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="article-first article">article</div>
+        <div class="article-second article">article</div>
+        <div class="aside-first aside">aside</div>
+        <div class="main">main</div>
+        <div class="aside-second aside">aside</div>
+        <div class="article-third article">article</div>
+        <div class="article-forth article">article</div>
+        <div class="article-fifth article">article</div>
+        <div class="footer">footer</div>
+    </div>        
+</body>
+</html>
