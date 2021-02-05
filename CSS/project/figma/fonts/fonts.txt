@@ -1,5 +1,0 @@
-font-family: 'PT Sans', sans-serif; ОСНОВНОЙ
-
-font-family: 'Playfair Display', serif;
-
-Cambria 

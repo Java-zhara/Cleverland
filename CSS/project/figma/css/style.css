@@ -11,111 +11,163 @@ body {
     font-weight: normal;
     font-size: 14px;
     color: #FFFFFF;
-    height: 100vh;
-    margin: 0 auto;
-    max-width: 1920px;
+    min-height: 100vh;
+    width: 100vw;
 }
 
-img {
+.container {
     max-width: 100%;
-    height: auto;
+    min-width: 320px;
 }
 
-  /*Header start*/
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: .2s linear;
-    z-index: 999;
+.wrapper {
+    max-width: 1420px;
+    min-width: 290px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
-.header-wrapper-reg {
+/*Header start*/
+
+.header .header-top, .header-sub-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header .header-top {
     background: #000000;
-    display: flex;  
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px 405px;
-    font-size: 12px;
-    line-height: 16px;
-    color: #969696;
 }
 
-.header-contacs {
+.header-top .header-contacs {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-}
-
-.tel-ico {
-    padding-right: 15px;
-}
-
-.reg-ico {
-    padding-right: 15px;
-}
-
-.registration {
-    font-size: 12px;
-    line-height: 16px;
+    padding: 14px 0;
     color: #969696;
+}
+
+.header-contacs .tel {
+    text-decoration: none;
+    color: #969696;
+}
+
+.header-reg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 14px 0;
     text-decoration: none;
 }
 
-.registration:hover {
-    opacity: .7;
+.header-reg .enter, .registr {
+    display: flex;
+    text-decoration: none;
+    color: #969696;
 }
 
-.header-wrapper-nav {
+.tel:hover, .enter:hover, .registr:hover {
+    opacity: 0.7;
+}
+
+.header-contacs .tel .tel-ico {
+    margin-right: 10px;
+}
+
+.header-reg .enter .reg-ico {
+    margin-right: 10px;
+}
+
+.header .header-sub-top {
     background: #0F0F0F;
+}
+
+.header .header-info {
+    background: url(../img/blazer.jpg) no-repeat top center #000;
+    background-size: cover;
+}
+
+.header-sub-top .header-logo {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 15px 405px;
+    padding: 27px 0;
 }
 
-.header-logo {
-    padding: 15px 0;
-}
-
-.header-nav {
+.header-sub-top .header-nav {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.header-list {
+.header-sub-top .header-list {
     display: flex;
-    flex-wrap: wrap;
+    text-decoration: none;
+    color: #969696;
+}
+
+.header-sub-top .header-list .header-item .header-link {
+    display: flex;
+    text-decoration: none;
+    color: #969696;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    padding: 31px 40px;
 }
 
-.header-item {
-    padding-right: 40px;
-}
-
-.header-item:last-child {
-    padding-right: 60px;
-}
-
-.header-basket {
-    padding-right: 40px;
-}
-
-.header-link {
-    color: #969696;
-    text-decoration: none;
-}
-
-
-.header-link:hover {
-    color: #FFFFFF;
+.header-item .header-link:hover {
     background-color: #1F1F1F;
-    padding: 31px 20px 35px 20px;
-    margin: -31px -20px -35px -20px;
+    color: white;
 }
 
-  /*Header end*/
+.header-nav .basket, .glass {
+    padding: 31px 20px;
+}
+
+.basket:hover, .glass:hover {
+    background-color: #1F1F1F;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-info-title {
+    margin: 80px 0;
+    border: 4px solid #FFFFFF;
+}
+
+.header-info-title h1 {
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 97px 68px 0 68px;
+    text-decoration: underline;
+}
+
+.header-info-title h3 {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 7px 0 116px 0;
+}
+
+.header-info-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 300px 154px;
+}
+
+/*Header end*/
+
+
