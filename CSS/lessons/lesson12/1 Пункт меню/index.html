@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пункт меню</title>
+    <style>
+
+        body {
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 70px; 
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            background-color: #737EC2;
+            padding: 10px 70px;
+        }
+
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;                       
+        }
+
+        .block::before {
+            position: absolute;
+            content: '';
+            background: rgba(88, 223, 223, 0.3);
+            margin: -20px 0;
+            width: 0;
+            height: 120%;         
+            left: 0;     
+        }
+
+        .block::after {
+            content: '';
+            overflow: hidden;
+            background: rgba(88, 223, 223, 0.3);
+            position: absolute;
+            right: 100%;
+            margin: -20px 0;
+            width: 0;
+            height: 120%;         
+        }
+
+        .block:hover::before {
+            animation-name: before;
+            animation-duration: 1.2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        .block:hover::after {
+            animation-name: after;
+            animation-duration: 1.2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards; 
+        }
+
+        @keyframes before {
+        0% {
+            width: 0; }
+        100% {
+            width: 100%; } }
+
+        @keyframes after {
+        0% {
+            left: 100%;
+            width: 0; }
+        100% {
+            left: 0;
+            width: 100%; } }
+
+    </style>
+</head>
+<body>
+
+    <div class="block">
+        <a href="#!">Пункт меню</a>  
+    </div>
+
+</body>
+</html>
