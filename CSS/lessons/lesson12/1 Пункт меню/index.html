@@ -54,51 +54,43 @@
 
         .block:hover::before {
             animation-name: before;
-            animation-name: before;
             animation-duration: 1.2s;
-            animation-duration: 1.2s;
-            animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
             animation-fill-mode: forwards;
-            animation-fill-mode: forwards; 
         }
 
         .block:hover::after {
             animation-name: after;
-            animation-name: after;
-            animation-duration: 1.2s;
             animation-duration: 1.2s;
             animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
             animation-fill-mode: forwards; 
         }
 
-        @-webkit-keyframes before {
-        from {
+        @keyframes before {
+        0% {
             width: 0; }
-        to {
+        100% {
             width: 100%; } }
 
         @keyframes before {
-        from {
+        0% {
             width: 0; }
-        to {
+        100% {
             width: 100%; } }
 
-        @-webkit-keyframes after {
-        from {
+        @keyframes after {
+        0% {
             left: 100%;
             width: 0; }
-        to {
+        100% {
             left: 0;
             width: 100%; } }
 
         @keyframes after {
-        from {
+        0% {
             left: 100%;
             width: 0; }
-        to {
+        100% {
             left: 0;
             width: 100%; } }
 
