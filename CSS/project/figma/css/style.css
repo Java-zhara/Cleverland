@@ -459,7 +459,7 @@ body {
 
 /* Footer start */
 
-.footer .footer-block {
+.footer {
     background:url(../img/footer-background.jpg) no-repeat top center #000;;
     padding: 0 20px;
 }
@@ -534,10 +534,16 @@ body {
     margin-bottom: 37px;
 }
 
+.footer-info-mail-form {
+    display: flex;
+}
+
 .footer-info-mail-form-email {
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.4);
     color: white;
+    max-width: 210px;
+    width: 100%;
 }
 
 .footer-info-mail-form-email::placeholder {
@@ -569,10 +575,15 @@ body {
 .sub-footer-figma-info {
     display: flex;
     justify-content: center;
-    margin: 17px 0 10px 0;
+    padding: 17px 0;
     font-size: 12px;
     line-height: 16px;
     color: #D0D0D0;
+}
+
+.sub-footer-figma-info a {
+    color: #D0D0D0;
+    text-decoration: none;
 }
 
 /* Footer end */
