@@ -35,7 +35,7 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     background-color: #095C5C;
-    flex 0 0 200px;
+    flex: 0 0 200px;
     flex-wrap: wrap;
 }
 
@@ -49,9 +49,9 @@ body {
 .top-metu {
     justify-content: center;
     align-items: center;
-    height: 40px;
     background-color: #010D3F;
     width: 100%;
+    flex: 0 0 50px;
 }
 
 .content {
@@ -79,7 +79,7 @@ aside {
 } 
 
 footer {
-    flex: 0 0 150px;
+    flex: 0 0 100px;
     background-color: #023447;
     justify-content: center;
 }
