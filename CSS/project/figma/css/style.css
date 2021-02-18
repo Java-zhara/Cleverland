@@ -26,6 +26,7 @@ body {
     max-width: 1110px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Header start */
@@ -105,6 +106,10 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding: 27px 0;
+}
+
+.header-burger {
+    display: none;
 }
 
 .header-sub-top .header-nav {
@@ -587,3 +592,223 @@ body {
 }
 
 /* Footer end */
+
+/* Media start */
+
+@media screen and (max-width: 1919px) {
+
+    .content-top, .content-middle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-top-right, .content-middle-left {
+        display: flex;
+        flex-basis: 100vh;
+    }
+}
+
+@media screen and (max-width: 1174px) {
+
+    .content-middle-left {
+        flex-basis: 0;
+    }
+
+    .content-bottom {
+        padding-top: 30px;
+    }
+
+    .content-bottom-link {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .content-bottom-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .content-top-link-clock-name, 
+    .content-top-link-clock-price {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1079px) {
+
+    .footer-info-categories-roster {
+        display: flex;    
+    }
+
+    .footer-info-categories-first,
+    .footer-info-categories-second {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info-categories-first-items,
+    .footer-info-categories-second-items {
+        margin: 0 0 10px 0;
+        padding: 5px 10px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .footer-info-categories-first {
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 1045px) {    
+
+    .aside-brands {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .aside-brand-items {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 905px) {
+
+    .content-top-link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 10px;
+    }
+
+    .content-top-link-clock-price,
+    .content-top-link-clock-name {
+        margin-bottom: 20px;
+    }
+
+    .content-top-left {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .content-top-right {
+        flex-basis: 0;
+    } 
+
+    .content-top-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    .content-bottom-link {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .aside-brands {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .content-bottom {
+        padding-bottom: 0;
+    }
+
+    .footer-info-text,
+    .footer-info-categories, 
+    .footer-info-mail {
+        grid-column: span 3;
+        padding-bottom: 0;
+    }
+
+    .footer {
+        background: black;
+    }
+
+
+    .header-burger {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 20px;
+        z-index: 2;
+        right: 0;
+        top: 0;
+    }
+    
+    .header-burger span {
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+    }
+    
+    .header-burger::before {
+        top: 0;
+    }
+    
+    .header-burger::after {
+        bottom: 0;
+    }  
+    
+    .header-burger::before,
+    .header-burger::after{
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    /* .header-block-top, 
+    .header-basket, 
+    .header-glass, 
+    .header-logo {
+        height: 80px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .header-burger-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        padding: 170px 0 0 0;
+    }
+
+    .header-list {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .header-sub-top .header-list .header-item .header-link {
+        margin: 0 0 20px 0;
+        color: white;
+        
+    } */
+    
+}
+
+/* Media end */
