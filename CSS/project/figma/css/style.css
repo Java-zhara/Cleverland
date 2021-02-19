@@ -108,7 +108,8 @@ body {
     padding: 27px 0;
 }
 
-.header-burger {
+.header-burger,
+.header-burger-close {
     display: none;
 }
 
@@ -465,11 +466,16 @@ body {
 /* Footer start */
 
 .footer {
-    background:url(../img/footer-background.jpg) no-repeat top center #000;;
-    padding: 0 20px;
+    background-color: #000;
 }
 
 .footer .footer-info {
+    background-image: url(../img/footer-background.jpg);
+    background-size: 100% 100%;
+    padding: 0 20px;
+}
+
+.footer .footer-info .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -597,14 +603,16 @@ body {
 
 @media screen and (max-width: 1919px) {
 
-    .content-top, .content-middle {
+    .content-top, 
+    .content-middle {
         display: flex;
         flex-direction: column;
     }
 
-    .content-top-right, .content-middle-left {
+    .content-top-right,
+    .content-middle-left {
         display: flex;
-        flex-basis: 100vh;
+        flex-basis: 50vw;
     }
 }
 
@@ -619,8 +627,8 @@ body {
     }
 
     .content-bottom-link {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .content-bottom-items {
@@ -635,58 +643,63 @@ body {
         font-size: 30px;
     }
 
-}
-
-@media screen and (max-width: 1079px) {
-
-    .footer-info-categories-roster {
-        display: flex;    
+    .footer .footer-info .wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .footer-info-categories-first,
-    .footer-info-categories-second {
+    .footer-info-text-description {
+        margin-bottom: 20px;
+    }
+
+    .footer-info-text-title,
+    .footer-info-categories-title,
+    .footer-info-mail-title {
+        margin: 20px 0;
+    }
+
+    .footer-info-mail-description {
+        margin-bottom: 20px;
+    }
+
+    .footer-info-mail-form {
         display: flex;
-        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
-    .footer-info-categories-first-items,
-    .footer-info-categories-second-items {
-        margin: 0 0 10px 0;
-        padding: 5px 10px;
-        font-size: 16px;
-        margin-right: 10px;
-    }
-
-    .footer-info-categories-first {
-        margin-bottom: 0;
+    .footer-info-mail-form-email {
+        max-width: 50%;
     }
 
 }
 
-@media screen and (max-width: 1045px) {    
-
+@media screen and (max-width: 1060px) {
     .aside-brands {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         margin-bottom: 30px;
     }
-
+  
     .aside-brand-items {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
     }
+  }
 
-}
-
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 950px) {
 
     .content-top-link {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         margin: 0 10px;
+    }
+
+    .content-bottom-link {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 
     .content-top-link-clock-price,
@@ -698,13 +711,36 @@ body {
         padding: 0;
     }
 
+    .content-top-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
 
-    .content-top-right {
+    .catalog {
+        padding: 20px;
+        max-width: none;
+      }
+
+    .look-collection {
+        width: 100%;
+    }
+
+    .look-collection-link {
+        width: 100%;
+        padding: 20px;
+        max-width: none;
+    }
+
+    .content-top-right,
+    .content-middle-right {
         flex-basis: 0;
-    } 
+        padding: 50px;
+    }
 
     .content-top-link {
         display: flex;
@@ -714,101 +750,55 @@ body {
     }
 
     .content-bottom-link {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        display: block;
+        width: 80vw;
     }
 
+    .content-bottom-items {
+        margin: 20px 10px;
+    }
     .aside-brands {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
         margin-bottom: 30px;
     }
-
+    
     .content-bottom {
         padding-bottom: 0;
     }
-
+    
     .footer-info-text,
-    .footer-info-categories, 
+    .footer-info-categories,
     .footer-info-mail {
         grid-column: span 3;
         padding-bottom: 0;
     }
-
+    
     .footer {
         background: black;
     }
-
-
+    
     .header-burger {
         display: block;
-        position: relative;
-        width: 25px;
-        height: 20px;
-        z-index: 2;
-        right: 0;
-        top: 0;
-    }
-    
-    .header-burger span {
-        background-color: white;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        top: 9px;
-    }
-    
-    .header-burger::before {
-        top: 0;
-    }
-    
-    .header-burger::after {
-        bottom: 0;
-    }  
-    
-    .header-burger::before,
-    .header-burger::after{
-        content: '';
-        background-color: white;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
+        cursor: pointer;
     }
 
-    /* .header-block-top, 
-    .header-basket, 
-    .header-glass, 
-    .header-logo {
-        height: 80px;
-        position: relative;
-        z-index: 2;
-    }
-    
-    .header-burger-menu {
+    /* .header-burger-menu {
+        width: 100%;
+        height: 100%;
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        padding: 170px 0 0 0;
+        background-color: #000;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%);
+        transition: 0.2s all linear;
     }
 
-    .header-list {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .header-sub-top .header-list .header-item .header-link {
-        margin: 0 0 20px 0;
-        color: white;
-        
+    .menu-active {
+        transform: translateX(0);
     } */
-    
-}
 
-/* Media end */
+    /* Media end */
