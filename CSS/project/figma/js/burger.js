@@ -2,11 +2,11 @@
     const burgerItem = document.querySelector(".js-burger-menu");
     const menuItem = document.querySelector(".header-burger-menu");
     const listItem = document.querySelector(".header-list");
-    const menuCloseItem = document.querySelector(".menu-close");
+    const menuCloseItem = document.querySelector(".header-burger-close");
     const menuLinks = document.querySelectorAll(".header-link");
     burgerItem.addEventListener("click", () => {
       menuItem.classList.add("menu-active");
-      menuCloseItem.style.display = "block";
+      menuCloseItem.style.display = "flex";
       document.body.style.position = "fixed";
     });
     menuCloseItem.addEventListener("click", () => {
