@@ -153,7 +153,7 @@ body {
 }
 
 .header .header-info {
-    background: url(../img/blazer.jpg) no-repeat top center #000;
+    background: url(../img/blazer-min.jpg) no-repeat top center #000;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -271,7 +271,7 @@ body {
 }
 
 .content-top-right {
-    background: url(../img/man.jpg) no-repeat top center #000;
+    background: url(../img/man-min.jpg) no-repeat top center #000;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -317,7 +317,7 @@ body {
 }
 
 .content-middle-left {
-    background: url(../img/suit.jpg) no-repeat top center #000;
+    background: url(../img/suit-min.jpg) no-repeat top center #000;
     background-size: cover;
 }
 
@@ -472,7 +472,7 @@ body {
 }
 
 .footer .footer-info {
-    background-image: url(../img/footer-background.jpg);
+    background-image: url(../img/footer-background-min.jpg);
     background-size: 100% 100%;
     padding: 0 20px;
 }
@@ -807,6 +807,10 @@ body {
         z-index: 10;
     } 
 
+    .header-sub-top .header-list .header-item .header-link {
+        font-size: 22px;
+    }
+
     .header-sub-top .header-list {
         background-color: #000;
         display: block;
@@ -817,6 +821,7 @@ body {
     .header-burger-close {
         display: flex;
         justify-content: flex-end;
+        cursor: pointer;
     }  
 
 }
