@@ -6,8 +6,3 @@ while (true) {
   sum += number;
 };
 alert( `Сумма = ${sum}`);
-
-
-
-
-
