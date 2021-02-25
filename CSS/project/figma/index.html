@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTEN</title>
+    <meta name="description" content=""/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,6 +22,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/burger.js" defer></script>
+    <script src="js/smoothscrol.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +31,7 @@
 
         <!-- Header start -->
 
-        <header class="header">
+        <header class="header" id="start">
 
             <div class="header-fixed-menu"> 
 
@@ -30,7 +40,7 @@
                     <div class="header-top wrapper">
 
                         <div class="header-contacs">
-                            <a href="tel:+7 812 123 45 67" class="tel">
+                            <a href="tel:+78121234567" class="tel">
                                 <img src="img/svg/tel.svg" alt="tel" class="tel-ico">
                                 8 (812) 123-45-67    
                             </a>    
@@ -57,7 +67,7 @@
                     <div class="header-sub-top wrapper">
 
                         <div class="header-logo">    
-                            <a href="#!" class="header-logo-link"><img src="img/svg/porten.svg" alt="porten" class="header-logo-img"></a>
+                            <a href="#start" class="header-logo-link js-scroll"><img src="img/svg/porten.svg" alt="porten" class="header-logo-img"></a>
                         </div>
 
                         <nav class="header-nav">
@@ -68,13 +78,13 @@
                                         <img src="img/svg/cross.svg" alt="menu" class="menu-close header-link">
                                     </li>   
                                     <li class="header-item">
-                                        <a href="#collection" class="header-link">Коллекция</a>
+                                        <a href="#collection" class="header-link js-scroll">Коллекция</a>
                                     </li>
                                     <li class="header-item">
-                                        <a href="#new-receipt" class="header-link">Поступления</a>
+                                        <a href="#new-receipt" class="header-link js-scroll">Поступления</a>
                                     </li>
                                     <li class="header-item">
-                                        <a href="#mail" class="header-link">Рассылка</a>
+                                        <a href="#mail" class="header-link js-scroll">Рассылка</a>
                                     </li>                             
                                 </ul>
                             </div>
@@ -87,8 +97,8 @@
                                 <a href="#!" class="header-glass"><img src="img/svg/glass.svg" alt="glass" class="glass"></a>
                             </div>
 
-                            <div class="header-burger">
-                                <img src="img/svg/burger-ico.svg" alt="menu" class="burger-menu js-burger-menu">
+                            <div class="header-burger js-burger-menu">
+                                <img src="img/svg/burger-ico.svg" alt="menu" class="burger-menu">
                             </div>
 
                         </nav>
@@ -137,19 +147,19 @@
                     <div class="content-top-link">
 
                         <a href="#!" class="content-top-items">
-                            <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                            <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                             <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                             <p class="content-top-link-clock-price">165 000 руб.</p>
                         </a>
 
                         <a href="#!" class="content-top-items">
-                            <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                            <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                             <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                             <p class="content-top-link-clock-price">165 000 руб.</p>
                         </a>
 
                         <a href="#!" class="content-top-items">
-                            <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                            <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                             <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                             <p class="content-top-link-clock-price">165 000 руб.</p>
                         </a>
@@ -223,49 +233,49 @@
                 <div class="content-bottom-link wrapper">
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
 
                     <a href="#!" class="content-bottom-items">
-                        <img src="img/clock.jpg" alt="clock" class="content-top-link-clock">
+                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
                         <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
                         <p class="content-top-link-clock-price">165 000 руб.</p>
                     </a>
@@ -289,20 +299,20 @@
 
                     <div class="aside-brands">
 
-                        <a href="#!"class="aside-brand-items">
-                            <img src="img/brand.jpg" alt="brand" class="aside-brand-link">
+                        <a href="#!" class="aside-brand-items">
+                            <img src="img/brand-min.jpg" alt="brand" class="aside-brand-link">
                         </a>
 
-                        <a href="#!"class="aside-brand-items">
-                            <img src="img/brand.jpg" alt="brand" class="aside-brand-link">
+                        <a href="#!" class="aside-brand-items">
+                            <img src="img/brand-min.jpg" alt="brand" class="aside-brand-link">
                         </a>
 
-                        <a href="#!"class="aside-brand-items">
-                            <img src="img/brand.jpg" alt="brand" class="aside-brand-link">
+                        <a href="#!" class="aside-brand-items">
+                            <img src="img/brand-min.jpg" alt="brand" class="aside-brand-link">
                         </a>
 
-                        <a href="#!"class="aside-brand-items">
-                            <img src="img/brand.jpg" alt="brand" class="aside-brand-link">
+                        <a href="#!" class="aside-brand-items">
+                            <img src="img/brand-min.jpg" alt="brand" class="aside-brand-link">
                         </a>
 
                     </div>                        
@@ -352,25 +362,25 @@
                         <div class="footer-info-categories-roster">
 
                             <div class="footer-info-categories-first">
-                                <a href="#!"class="footer-info-categories-first-items">
+                                <a href="#!" class="footer-info-categories-first-items">
                                     часы
                                 </a>
 
-                                <a href="#!"class="footer-info-categories-first-items">
+                                <a href="#!" class="footer-info-categories-first-items">
                                     браслеты
                                 </a>
                                 
-                                <a href="#!"class="footer-info-categories-first-items">
+                                <a href="#!" class="footer-info-categories-first-items">
                                     ремни
                                 </a>  
                             </div>
                             
                             <div class="footer-info-categories-second">
-                                <a href="#!"class="footer-info-categories-second-items">
+                                <a href="#!" class="footer-info-categories-second-items">
                                     ювелирные изделия
                                 </a>
 
-                                <a href="#!"class="footer-info-categories-second-items">
+                                <a href="#!" class="footer-info-categories-second-items">
                                     запонки
                                 </a>
                             </div>
@@ -403,7 +413,7 @@
             </div>
 
             <div class="sub-footer">
-                <div class="sub-footer-law">&#169&nbsp;Все права защищены</div>
+                <div class="sub-footer-law">&#169;&nbsp;Все права защищены</div>
                 <div class="sub-footer-figma-info">
                     <a href="https://figma.info/blog/templates/2020-09-01-muzhskoj-magazin.html" target="_blank">
                         Сделано по макету Figma
