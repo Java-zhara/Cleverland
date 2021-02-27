@@ -179,12 +179,13 @@ body {
     transition: all 0.8s ease 0s;
 }
 
-.header-info-title-active {
+.header-info-title.active {
     transform: translate(0px, 0px);
     opacity: 1;
 }
 
 .header-info-title h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 64px;
     line-height: 86px;
@@ -208,6 +209,15 @@ body {
     text-align: center;
     margin-bottom: 154px;
     max-width: 730px;
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.header-info-text.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
 }
 
 /*Header end*/
@@ -346,6 +356,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    transform: translate(+120%, 0px);
+    transition: all 0.3s ease 0s;
+}
+
+.content-middle-right-title.active {
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0s;
 }
 
 .content-middle-right-title hr {
@@ -359,12 +376,26 @@ body {
     text-align: center;
     padding-bottom: 60px;
     max-width: 472px;
+    transform: translate(+120%, 0px);
+    transition: all 0.3s ease 0s;
+}
+
+.content-middle-right-text.active {
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0.1s;
 }
 
 .look-collection {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translate(+120%, 0px);
+    transition: all 0.3s ease 0s;
+}
+
+.look-collection.active {
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0.2s;
 }
 
 .look-collection-link {
@@ -452,6 +483,12 @@ body {
     font-size: 36px;
     line-height: 48px;
     text-transform: uppercase;
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+}
+
+.aside-title.active {
+    transform: scale(1);
 }
 
 .aside-title h2 {
@@ -466,6 +503,12 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 40px 0 80px 0;
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+}
+
+.aside-brands.active {
+    transform: scale(1);
 }
 
 .aside-brand-items:hover {
@@ -833,7 +876,28 @@ body {
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
-    }  
+    }
+        
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        color: white;
+        font-size: 80px;
+    }
+
+    .swiper-pagination-fraction {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .content-bottom-link {
+        gap: 0;
+    }
+
+    .content-bottom-items:hover {
+        transform: scale(1);
+    }
 
 }
 

@@ -21,8 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="js/burger.js" defer></script>
     <script src="js/smoothscrol.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/animation.js" defer></script>
 </head>
 
@@ -112,12 +115,12 @@
 
             <div class="header-info">
 
-                <div class="header-info-title anim-items">
+                <div class="header-info-title anim-items anim-no-hide">
                     <h1>porten</h1>
                     <h3>санкт-петербург</h3>
                 </div>
 
-                <div class="header-info-text">
+                <div class="header-info-text anim-items anim-no-hide">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Purus interdum purus, est tortor pulvinar ut in. 
                         Fringilla a diam enim sed justo, sed iaculis sagittis. 
@@ -193,12 +196,12 @@
 
                 <div class="content-middle-right">
 
-                    <div class="content-middle-right-title">
+                    <div class="content-middle-right-title anim-items">
                         <h2>Коллекция 2018</h2>
                         <hr>
                     </div>                
 
-                    <div class="content-middle-right-text">
+                    <div class="content-middle-right-text anim-items">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Non rutrum ornare ut mattis habitant dui arcu. Sagittis 
                             amet nunc ut neque quis nibh arcu. Vivamus vestibulum 
@@ -212,7 +215,7 @@
                             orci pharetra sed diam.</p>
                     </div>
 
-                    <div class="look-collection">
+                    <div class="look-collection anim-items">
                         <a href="#!" class="look-collection-link">Посмотреть коллекцию</a>
                     </div>
 
@@ -231,59 +234,102 @@
                     <hr>
                 </div>
 
-                <div class="content-bottom-link wrapper">
+                <div class="image-slider swiper-container">
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                    <div class="content-bottom-link wrapper image-slider-wrapper swiper-wrapper">
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                        <div class="image-slider-slide swiper-slide">
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                            <a href="#!" class="content-bottom-items image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                        </div>
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                        <div class="image-slider-slide swiper-slide">
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                            <a href="#!" class="content-bottom-items image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                        </div>
 
-                    <a href="#!" class="content-bottom-items">
-                        <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
-                        <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
-                        <p class="content-top-link-clock-price">165 000 руб.</p>
-                    </a>
+                        <div class="image-slider-slide swiper-slide">
+
+                            <a href="#!" class="content-bottom-items image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
+
+                        </div>
+
+                        <div class="image-slider-slide swiper-slide">
+
+                            <a href="#!" class="content-bottom-items image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
+
+                        </div>
+
+                        <div class="image-slider-slide swiper-slide">
+
+                            <a href="#!" class="content-bottom-items image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
+
+                        </div>
+
+                        <div class="image-slider-slide swiper-slide">
+
+                            <a href="#!" class="content-bottom-items image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
+
+                        </div>
+
+                        <div class="image-slider-slide swiper-slide">
+
+                            <a href="#!" class="content-bottom-items image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
+
+                        </div>
+
+                        <div class="image-slider-slide swiper-slide">
+
+                            <a href="#!" class="content-bottom-items  image-slider-image">
+                                <img src="img/clock-min.jpg" alt="clock" class="content-top-link-clock">
+                                <p class="content-top-link-clock-name">Louis XVI ATHOS</p>
+                                <p class="content-top-link-clock-price">165 000 руб.</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination-fraction"></div>
+
 
                 </div>
 
             </div>
+        
+        </main>
 
         <!-- Content-bottom end -->
 
@@ -293,12 +339,12 @@
 
                 <div class="aside-wrapper wrapper">
 
-                    <div class="aside-title">
+                    <div class="aside-title anim-items">
                         <h2>Наши бренды</h2> 
                         <hr>
                     </div>
 
-                    <div class="aside-brands">
+                    <div class="aside-brands anim-items">
 
                         <a href="#!" class="aside-brand-items">
                             <img src="img/brand-min.jpg" alt="brand" class="aside-brand-link">
