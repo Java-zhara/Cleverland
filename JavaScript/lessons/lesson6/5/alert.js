@@ -1,10 +1,10 @@
 "use strict";
-function circle(r) {
-  const π = 3.14;
-  let l = 2 * π * r; 
-  return alert(l);
+function circle(radius) {
+  const numberPi = 3.14;
+  let length = 2 * numberPi * radius; 
+  return alert(length);
 };
 
-let r = prompt('Введите радиус окружности');
+let radius = prompt('Введите радиус окружности');
 
-circle(r);
+circle(radius);
