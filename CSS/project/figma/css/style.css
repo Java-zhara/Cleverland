@@ -890,34 +890,18 @@ body {
     }
 
     .content-top-title-right {
-        font-size: 18px;
-    }
+        font-size: 18px;    }
       
-    /* .content-top-right hr {
+    .content-top-right hr {
         width: 120px;
-        margin: 18px 0 30px 0;
-    } */
+        margin: 4px 0 4px 0;
+    }
       
     .catalog {
         font-size: 10px;
+        padding: 6px 14px;
     }
-
-    .content-middle-right-title {
-        font-size: 18px;
-    }
-      
-    /* .content-middle-right-title hr {
-        width: 120px;
-        margin: 40px 0;
-    } */
-      
-    .content-middle-right-text {
-        font-size: 10px;
-    }
-
-    .look-collection-link {
-        font-size: 10px;
-    }
+    
 
     .footer-info-categories-first,
     .footer-info-categories-second {
