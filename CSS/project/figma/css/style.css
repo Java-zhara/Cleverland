@@ -885,23 +885,10 @@ body {
         height: 100%;
     }
     
-    .header-contacs {
+    .header-contacs,
+    .header-reg {
         font-size: 12px;
     }
-
-    .content-top-title-right {
-        font-size: 18px;    }
-      
-    .content-top-right hr {
-        width: 120px;
-        margin: 4px 0 4px 0;
-    }
-      
-    .catalog {
-        font-size: 10px;
-        padding: 6px 14px;
-    }
-    
 
     .footer-info-categories-first,
     .footer-info-categories-second {
@@ -918,6 +905,15 @@ body {
 
     .footer-info-mail-form-email::placeholder {
         font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 384px) {
+    
+    .header-contacs,
+    .header-reg {
+        font-size: 8px;
     }
 
 }
