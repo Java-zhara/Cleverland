@@ -4,6 +4,6 @@ function corner(deg) {
   return console.log(rad);
 };
 
-let deg = prompt('Введите значение угла в градусах');
+const deg = prompt('Введите значение угла в градусах');
 
 corner(deg);

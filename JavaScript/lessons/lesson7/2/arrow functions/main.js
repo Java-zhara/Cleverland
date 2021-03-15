@@ -6,7 +6,7 @@ let calcSum = (a, b) => {
     return sum;
   }; 
   
-  let a = +prompt('Введите первое число');
-  let b = +prompt('Введите второе число');
+  const a = +prompt('Введите первое число');
+  const b = +prompt('Введите второе число');
 
   console.log (calcSum(a, b));
