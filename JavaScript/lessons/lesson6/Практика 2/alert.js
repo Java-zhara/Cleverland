@@ -2,6 +2,6 @@
 function multiply(n,m) { 
   return multiply = n * m; 
 };
-let n = +prompt('Введите первое число');
-let m = +prompt('Введите второе число');
+const n = +prompt('Введите первое число');
+const m = +prompt('Введите второе число');
 alert(multiply(n,m));

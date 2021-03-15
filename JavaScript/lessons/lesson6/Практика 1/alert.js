@@ -6,5 +6,5 @@ function hello(name) {
     return `Привет, ${name}`;
   };
 };
-let name = prompt('Введите имя');
+const name = prompt('Введите имя');
 alert(hello(name));
