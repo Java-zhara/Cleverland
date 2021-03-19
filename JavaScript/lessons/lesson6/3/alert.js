@@ -9,8 +9,8 @@ function calcMin(a,b,c) {
   };
 };
 
-let a = +prompt('Введите первое число');
-let b = +prompt('Введите второе число');
-let c = +prompt('Введите третье число');
+const a = +prompt('Введите первое число');
+const b = +prompt('Введите второе число');
+const c = +prompt('Введите третье число');
 
 calcMin(a,b,c);

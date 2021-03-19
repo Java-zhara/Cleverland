@@ -8,8 +8,8 @@ function pow(a, b) {
   return result;
 };
 
-let a = prompt("Введите число");
-let b = prompt("Введите степень");
+const a = prompt("Введите число");
+const b = prompt("Введите степень");
 
 if (b < 1) {
   alert(`Степень ${b} не поддерживается, используйте натуральное число`);

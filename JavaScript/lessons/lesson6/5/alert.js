@@ -5,6 +5,6 @@ function circle(radius) {
   return alert(length);
 };
 
-let radius = prompt('Введите радиус окружности');
+const radius = prompt('Введите радиус окружности');
 
 circle(radius);

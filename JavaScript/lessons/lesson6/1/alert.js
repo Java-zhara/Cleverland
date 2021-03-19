@@ -7,7 +7,7 @@ function checkAge(age) {
     };
   };
   
-  let age = prompt('Сколько вам лет?');
+  const age = +prompt('Сколько вам лет?');
   
   if ( checkAge(age) ) {
     alert( 'Добро пожаловать' );
