@@ -24,7 +24,7 @@ function topSalary(salary) {
     };
   };
 
-  return maxName;
+  return `${maxName} ${max}`;
 };
 
 console.log(topSalary(salary));
