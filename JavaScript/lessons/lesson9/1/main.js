@@ -1,5 +1,5 @@
 "use strict";
-let square = {
+const square = {
   area(width, height) {
     return width * height;
   },

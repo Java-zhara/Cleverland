@@ -1,49 +1,40 @@
 "use strict";
-function Salary() {
-  this.Ivanov = 100;
-  this.Petrov = 200;
-  this.Sidorov = 300;
-};
-
-const salary = new Salary;
-
-function maxSalary(salary) {
-
-  let max = 0;
-  let maxName = null;
-
-  for (const [name, wages] of Object.entries(salary)) {
-    if (max < wages) {
-      max = wages;
-      maxName = name;
+const salary = {
+  wages: {
+    ivanov: 100,
+    petrov: 200,
+    sidorov: 300,
+  },
+  calcMiddle() {
+    let sum = 0;
+    for (let key of Object.values(this.wages)) {
+      sum += key;
     };
-  };
-
-  return `${maxName} ${max}`;
-};
-
-let middleWages = 0;
-for (let key in salary) {
-  middleWages += salary[key] / Object.keys(salary).length;
-};
-
-function minSalary(salary) {
-
-  let min = Number.MAX_VALUE;
-  let minName = null;
-
-  for (const [name, wages] of Object.entries(salary)) {
-    if (min > wages) {
-      min = wages;
-      minName = name;
+    const middleWage = sum / Object.values(this.wages).length;
+    return middleWage
+  },
+  calcMax() {
+    let max = 0;
+    for (let key of Object.values(this.wages)) {
+      if (max < key) {
+        max = key;
+      };
     };
-  };
-
-  return `${minName} ${min}`;
+    return max;
+  },
+  calcMin() {
+    let min = Number.MAX_VALUE;
+    for (let key of Object.values(this.wages)) {
+      if (min > key) {
+        min = key;
+      };
+    };
+    return min;
+  },
 };
 
-console.log(`Максимальная зарплата ${maxSalary(salary)}`);
+console.log(`Средняя зарплата ${salary.calcMiddle()}`);
 
-console.log(`Средняя зарплата ${middleWages}`);
+console.log(`Максимальная зарплата ${salary.calcMax()}`);
 
-console.log(`Минимальная зарплата ${minSalary(salary)}`);
+console.log(`Минимальная зарплата ${salary.calcMin()}`);

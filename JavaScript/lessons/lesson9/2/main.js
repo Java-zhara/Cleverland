@@ -5,6 +5,6 @@ function Car(carModel, engineVolume, yearBirth) {
   this.yearBirth = yearBirth;
 };
 
-let car = new Car('Audi', 3, 2020);
+const car = new Car('Audi', 3, 2020);
 
 console.log(car);
