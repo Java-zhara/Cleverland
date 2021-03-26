@@ -14,7 +14,7 @@ fruits.splice(2, 2);
 
 console.log(fruits);
 
-let favoriteFruits = ['Нектарин', 'Персик', 'Слива'];
+const favoriteFruits = ['Нектарин', 'Персик', 'Слива'];
 
 console.log(favoriteFruits);
 
@@ -34,4 +34,4 @@ favoriteFruits.forEach((item, index, array) => {
 
 console.log(fruits.indexOf('Слива'));
 
-console.log(fruits.indexOf('Яблоко'));
+console.log(fruits.includes('Яблоко'));

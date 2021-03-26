@@ -20,13 +20,12 @@ arrNew.sort((a, b) => a - b);
 
 console.log(arrNew);
 
-let module = arr.map(item => Math.abs(item));
+const mapArr = arr.map(item => {
+    item < 0 ? item = Math.abs(item) : item = item * 2
+    return item;
+});
 
-console.log(module);
-
-let plus = arr.filter(item => item > 0).map(item => item * 2);
-
-console.log(plus);
+console.log(mapArr);
 
 arrNew.sort((a, b) => b - a);
 
@@ -34,7 +33,7 @@ console.log(arrNew);
 
 console.log(arrNew.reverse());
 
-let resultMult = arrNew.reduce((mult, current) => mult * current);
+let resultMult = arrNew.reduce((mult, current) => mult * current, 1);
 
 console.log(resultMult);
 
