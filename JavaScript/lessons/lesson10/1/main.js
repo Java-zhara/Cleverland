@@ -3,7 +3,7 @@
 const inch = 2.54;
 
 function calcDiagonal() {
-  return Math.floor(num * inch * 100) / 100;
+  return (num * inch).toFixed(2);
 };
 
 const num = +prompt('Введите диагональ телевизора в дюймах');

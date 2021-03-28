@@ -1,9 +1,9 @@
 "use strict";
 function moneyDouble(str) {
   let val = parseFloat(str);
-  let string = val.toString().split('').length;
-  let slice = str.slice(string);
-  let double = val * 2;
+  const string = val.toString().split('').length;
+  const slice = str.slice(string);
+  const double = val * 2;
   return double + slice;
 };
 
