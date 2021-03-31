@@ -1,5 +1,5 @@
 'use strict';
-let monitors = {
+const monitors = {
     'Philips': 21,
     'Asus': 19,
     'Samsung': 23.5,
@@ -9,8 +9,9 @@ let monitors = {
 
 const inchInCentimeters = 2.54;
 
-let fromInchInCentimeters = Object.entries(monitors).map(([key, value]) => [key, value * inchInCentimeters]);
+const fromInchInCentimeters = Object.fromEntries(Object.entries(monitors).map(([key, value]) => [key, value * inchInCentimeters]));
 
 console.log(fromInchInCentimeters);
 
 console.log(`Количество мониторов = ${Object.entries(monitors).length}`);
+

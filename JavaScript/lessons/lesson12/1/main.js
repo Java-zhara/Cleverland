@@ -1,5 +1,5 @@
 'use strict';
-let experience = {
+const experience = {
     'Jack': 1,
     'John': 2,
     'Pete': 8,
