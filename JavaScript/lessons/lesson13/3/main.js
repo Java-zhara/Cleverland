@@ -1,8 +1,10 @@
 'use strict';
 const start = Date.now();
 
-for (let i = 0; i < 1000000; i++) {
-  let sunNum = i + i + i;
+let sumNum = 0;
+
+for (let i = 1; i <= 1000000; i++) {
+  sumNum += i;
 };
 
 const end = Date.now();
