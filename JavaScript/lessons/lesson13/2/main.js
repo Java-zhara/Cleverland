@@ -1,11 +1,8 @@
 'use strict';
 
 function getWeekDay(date) {
-
   const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
-
   return days[date.getDay()];
-
 };
 
 const date = new Date(1986, 8, 26);
