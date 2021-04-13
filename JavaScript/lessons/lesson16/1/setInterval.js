@@ -1,9 +1,16 @@
 'use strict';
+const divNew = document.createElement('div');
+document.body.append(divNew);
+
 const div = document.querySelectorAll('div');
 
-const a = +prompt('Введите начало отсчета', 5);
+let a;
+let b;
 
-const b = +prompt('Введите конец отсчета', 0);
+do {
+    a = +prompt('Введите начало отсчета с большего числа', 5);
+    b = +prompt('Введите число конца отсчета больше начального', 0);
+} while (a < b || isNaN(a) || isNaN(b));
 
 const printNumbers = (from, to) => {
 
@@ -11,11 +18,7 @@ const printNumbers = (from, to) => {
         div[0].innerHTML = `Отсчет пошел: ${from}`;
         if (from == to) {
             clearInterval(timerId);
-        } else if (a <= b) {
-            div[0].innerHTML = `Введите первую цифру больше второй`;
-        } else if (isNaN(from) || isNaN(to)) {
-            div[0].innerHTML = `Введите цифры`;
-        };
+        }
         from--;
     }, 1000);
 }
