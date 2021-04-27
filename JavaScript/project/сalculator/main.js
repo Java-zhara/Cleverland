@@ -1,9 +1,25 @@
 'use strict';
+
 const input = document.querySelector('input');
 
 const number = document.querySelectorAll('.num');
 
-let clickNumButton = function () {
+let result = 0;
+let operation = '+';
+
+const plus = document.querySelector('.plus');
+
+const minus = document.querySelector('.minus');
+
+const multiply = document.querySelector('.multiply');
+
+const divide = document.querySelector('.divide');
+
+const clean = document.querySelector('.clean');
+
+const equal = document.querySelector('.equal');
+
+const clickNumButton = function () {
     input.value = input.value + this.textContent;
 }
 
@@ -11,10 +27,7 @@ for (var i = 0; i < number.length; i++) {
     number[i].addEventListener('click', clickNumButton);
 }
 
-let result = 0;
-let operation = '+';
-
-let applyOperation = function() {
+const applyOperation = () => {
     if(operation === '+') {
         result += getInputNumber();
     } else if(operation === '-') {
@@ -27,64 +40,52 @@ let applyOperation = function() {
     input.value = '';
 }
 
-let getInputNumber = function(){
+const getInputNumber = () => {
     let inputValue = input.value;
     return new Number(inputValue);
 }
 
-const plus = document.querySelector('.plus');
-
-let clickPlusButton = function () {    
+const clickPlusButton = () => {    
     applyOperation();
     operation = '+';
 }
 
-plus.addEventListener('click', clickPlusButton);
-
-const minus = document.querySelector('.minus');
-
-let clickMinusButton = function () {    
+const clickMinusButton = () => {    
     applyOperation();
     operation = '-';
 }
 
-minus.addEventListener('click', clickMinusButton);
-
-const multiply = document.querySelector('.multiply');
-
-let clickMultiplyButton = function () {    
+const clickMultiplyButton = () => {    
     applyOperation();
     operation = '&times';
 }
 
-multiply.addEventListener('click', clickMultiplyButton);
-
-const divide = document.querySelector('.divide');
-
-let clickDivideButton = function () {    
+const clickDivideButton = () => {    
     applyOperation();
     operation = '&divide';
 }
 
-divide.addEventListener('click', clickDivideButton);
-
-const clean = document.querySelector('.clean');
-
-let clickCleanButton = function () {
+const clickCleanButton = () => {
     input.value = '';
     result = 0;
     operation = '+';
 }
 
-clean.addEventListener('click', clickCleanButton);
-
-const equal = document.querySelector('.equal');
-
-let clickEqualnButton = function () {    
+const clickEqualnButton = () => {    
     applyOperation();
     const stringResult = new String(result);
     clickCleanButton();
     input.value = stringResult;
 }
+
+plus.addEventListener('click', clickPlusButton);
+
+minus.addEventListener('click', clickMinusButton);
+
+multiply.addEventListener('click', clickMultiplyButton);
+
+divide.addEventListener('click', clickDivideButton);
+
+clean.addEventListener('click', clickCleanButton);
 
 equal.addEventListener('click', clickEqualnButton);
