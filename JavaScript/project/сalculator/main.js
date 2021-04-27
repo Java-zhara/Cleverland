@@ -5,6 +5,7 @@ const input = document.querySelector('input');
 const number = document.querySelectorAll('.num');
 
 let result = 0;
+
 let operation = '+';
 
 const plus = document.querySelector('.plus');
@@ -19,12 +20,15 @@ const clean = document.querySelector('.clean');
 
 const equal = document.querySelector('.equal');
 
-const clickNumButton = function () {
-    input.value = input.value + this.textContent;
-}
+let clearValueAfterOperation;
 
-for (var i = 0; i < number.length; i++) {
-    number[i].addEventListener('click', clickNumButton);
+const clickNumButton = function () {
+    if (clearValueAfterOperation === true) {
+        input.value = this.textContent;
+    } else {
+        input.value = input.value + this.textContent;
+    }
+    clearValueAfterOperation = false;
 }
 
 const applyOperation = () => {
@@ -37,7 +41,7 @@ const applyOperation = () => {
     }else if(operation === '&divide') {
         result /= getInputNumber();
     }
-    input.value = '';
+    clearValueAfterOperation = true;
 }
 
 const getInputNumber = () => {
@@ -76,6 +80,10 @@ const clickEqualnButton = () => {
     const stringResult = new String(result);
     clickCleanButton();
     input.value = stringResult;
+}
+
+for (var i = 0; i < number.length; i++) {
+    number[i].addEventListener('click', clickNumButton);
 }
 
 plus.addEventListener('click', clickPlusButton);
