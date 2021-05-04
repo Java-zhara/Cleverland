@@ -9,13 +9,13 @@ let a;
 let b;
 
 startButton.addEventListener('click', () => {
-    if (startButton.classList.contains("button-active")) {
+    if (startButton.classList.contains("button-start")) {
         if (startButton.value === 'Пуск') {
             startButton.value = 'Пауза';
-            counter.classList.add("counter-active");
+            counter.classList.add("counter-start");
         } else {
             startButton.value = 'Пуск';
-            counter.classList.remove("counter-active");
+            counter.classList.remove("counter-start");
         };
         printNumber(a, b);
     } else {
@@ -29,9 +29,9 @@ startButton.addEventListener('click', () => {
 
 const printNumber = (from, to) => {
     let timerId = setInterval(() => {
-        if (from === to || !(counter.classList.contains("counter-active"))) {
+        if (from === to || !(counter.classList.contains("counter-start"))) {
             if (from === to) {
-                startButton.classList.remove("button-active")
+                startButton.classList.remove("button-start")
                 counter.innerHTML = 'Поехали!';
                 startButton.value = 'Пуск';
             }
@@ -53,8 +53,8 @@ const getNumbers = () => {
         if (a < b) {
             return alert('Начальное значение должно быть больше конечного');
         } else {
-            startButton.classList.add("button-active");
-            counter.classList.add("counter-active");
+            startButton.classList.add("button-start");
+            counter.classList.add("counter-start");
             return true;
         };
     };
