@@ -4,7 +4,7 @@ const form = document.querySelector('#form');
 
 const email = document.querySelector('#email');
 
-const pass = document.querySelector('#pass');
+const password = document.querySelector('#password');
 
 const submitForm = async (e) => {
     e.preventDefault();
@@ -27,14 +27,12 @@ const submitForm = async (e) => {
         console.log(result.data)
         form.hidden = true;
         document.body.insertAdjacentHTML(
-            'afterbegin',
-            '<input type="submit" value="Получить данные">',
             'afterend',
-            '<div>Нет данных</div>'
+            '<div class="user">Данные пользователя загружены</div>',
         );
     } else {
         email.insertAdjacentHTML('afterend', '<div class="error">ОШИБКА</div>')
-        pass.insertAdjacentHTML('afterend', '<div class="error">ОШИБКА</div>')
+        password.insertAdjacentHTML('afterend', '<div class="error">ОШИБКА</div>')
     };
 }
 
