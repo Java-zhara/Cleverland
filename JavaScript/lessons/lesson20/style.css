@@ -1,0 +1,34 @@
+.contaner {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 28px;
+    margin-bottom: 0; 
+}
+
+.enter-input {
+    width: 300px;
+    height: 40px;
+    font-size: 28px;
+}
+
+.enter-button {
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.user {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
